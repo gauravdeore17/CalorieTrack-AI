@@ -1,0 +1,25 @@
+1. Open the Directory = pushd C:\Users\apurv\OneDrive\Desktop\Calories Expenditure Prediction
+
+2. setup = windows setup tool and cmake is mandatory before satisfy the req file 
+
+3. Install the setuptools , wheel and distlib explicitly using pip 
+
+4. Satisfy the req = pip install -r requirements.txt
+
+5. Database Creation = 
+
+CREATE TABLE predictions (
+    id SERIAL PRIMARY KEY,
+    age FLOAT NOT NULL,
+    height FLOAT NOT NULL,
+    weight FLOAT NOT NULL,
+    duration FLOAT NOT NULL,
+    heart_rate FLOAT NOT NULL,
+    body_temp FLOAT NOT NULL,
+    gender INTEGER NOT NULL,
+    calories FLOAT NOT NULL,
+    prediction_date TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
+6. Run the Application = python app.py
+
